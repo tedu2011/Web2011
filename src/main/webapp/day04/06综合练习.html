@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            font: 12px "simhei", Arial, Helvetica, sans-serif;
+            color: #666;
+        }
+
+        body>div{
+            width: 366px;
+            height: 233px;
+            background-color: #E8E8E8;
+        }
+
+       #top_div{
+           background-color: #0aa1ed;
+           width: 100%;
+           height: 35px;
+           border-radius: 3px;
+       }
+
+        #top_div>img{
+            margin: 8px 0 0 10px;/*margin是上级元素的位置或者相邻元素的距离*/
+        /*    内边距是元素边缘距内容的距离*/
+        }
+
+        #top_div>span{
+            font-size: 16px;
+            color: white;
+            /*行内元素不能用外边距进行调整*/
+            /*如果需对某一个元素位置进行微调，使用相对定位*/
+            position: relative;
+            /*相对定位是以元素的初始位置进行调整*/
+            top: -5px;
+        }
+
+        .category{
+            padding-left: 10px;
+            /*margin-left: 10px;*/
+        }
+
+        li>a{
+            text-decoration: none;
+            color: #62B5EC;
+        }
+
+        p{
+            color: #62B5EC;
+            margin: 20px 0 10px 0;
+        }
+
+        ul{
+            list-style-type: none;
+            overflow: hidden;/*解决高度识别为0的显示异常*/
+            padding: 0;/*去除自带的40像素左内边距*/
+            margin: 0;/*去掉自带外边距*/
+        }
+
+        li{
+            float: left;
+            margin-right: 10px;
+            /*padding-bottom: 5px;*/
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div id="top_div">
+        <img src="http://doc.canglaoshi.org/tstore_v1/images/itemCat/computer_icon1.png" alt="">
+        <span>电脑,办公/1F</span>
+    </div>
+    <div class="category">
+        <p>电脑办公</p>
+        <ul>
+            <li><a href="">笔记本</a></li>
+            <li><a href="">游戏机</a></li>
+            <li><a href="">台式机</a></li>
+            <li><a href="">一体机</a></li>
+            <li><a href="">服务器</a></li>
+        </ul>
+        <p>电脑配件</p>
+        <ul>
+            <li><a href="">CPU</a></li>
+            <li><a href="">SSD硬盘</a></li>
+            <li><a href="">显示器</a></li>
+            <li><a href="">显卡</a></li>
+            <li><a href="">组装电脑</a></li>
+            <li><a href="">机箱</a></li>
+        </ul>
+        <p>外设/游戏</p>
+        <ul>
+            <li><a href="">键盘</a></li>
+            <li><a href="">鼠标</a></li>
+            <li><a href="">U盘</a></li>
+            <li><a href="">移动硬盘</a></li>
+            <li><a href="">游戏设备</a></li>
+            <li><a href="">智能单车</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

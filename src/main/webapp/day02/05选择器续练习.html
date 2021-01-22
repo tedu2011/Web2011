@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #d1{
+            background-color: pink;
+        }
+        .c1{
+            color: green;
+        }
+        ul,a{
+            background-color: blue;
+        }
+        a:link{
+            color: green;
+        }
+
+        a:visited{
+            color: blue;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color: yellow;
+        }
+        input[type="text"]{
+            color: red;
+        }
+        input[type="password"]{
+            background-color: green;
+        }
+        /*子元素选择器 要确定好层级关系，前面要有body*/
+        body>div>div>span{
+            background-color: red;
+        }
+        /*子孙后代选择器，不能写逗号，不然会将全部的div标签都变成绿色*/
+        div div span{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<div id="d1">刘备</div>
+<div>关羽</div>
+<div class="c1">张飞</div>
+<span>悟空</span>
+<span>八戒</span>
+<span class="c1">沙僧</span>
+<ul>
+    <li>水煮鱼</li><li>红烧肉</li><li class="c1">黄焖鸡</li>
+</ul>
+<input type="text" value="didi"><input type="password">
+<a href="http://baidu.com">百度</a>
+<div>
+    <span>s1</span>
+    <div><span>s2</span></div>
+    <div>
+        <span>s3</span>
+        <div><span>s4</span></div>
+    </div>
+</div>
+</body>
+</html>

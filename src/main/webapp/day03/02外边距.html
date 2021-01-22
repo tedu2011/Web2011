@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+        #d1{
+            margin-bottom: 100px;
+        /*    上下和左右赋值 margin:10px 20px*/
+        /*    居中写法 */
+        /*    margin: 0 auto;*/
+        /*    上右下左*/
+        /*    margin: 10px 20px 30px 40px ;*/
+        /*    四个方向赋值50*/
+            margin-bottom: 150px;
+        }
+        #d2{
+            /*上下相邻两个元素彼此添加外边距，取最大值*/
+            margin-top: 120px;
+        }
+        span{
+            border: 1px solid blue;
+        }
+        #s1{
+            margin-right: 99px;
+        }
+        #s2{
+            /*左右相邻两个元素彼此添加外边框，两个外边框相加求和*/
+            margin-left: 114px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="d1">div1</div>
+<div id="d2">div2</div>
+<span id="s1">span1</span>
+<span id="s2">span2</span>
+</body>
+</html>

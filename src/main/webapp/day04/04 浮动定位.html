@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body>div{
+            width: 200px; border: 1px solid red;
+            overflow: hidden;
+        }
+        body>div>div{
+            float: left;
+        }
+        /*如果某个元素的所有子元素全部浮动，则元素自动识别的高度为0，此时有可能造成显示异常
+        为了避免出现异常需要在上级元素中添加overflow:hidden
+        */
+        #d1{width: 50px;height: 50px;background-color: red ;}
+        #d2{width: 50px;height: 50px;background-color: blue; }
+        #d3{width: 50px;height: 50px;background-color: green;}
+    </style>
+</head>
+<body>
+<div>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+</div>
+</body>
+</html>

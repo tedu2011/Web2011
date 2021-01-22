@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            div{
+                border: 1px solid red;
+                width: 200px;
+                height: 100px;
+            }
+            span{
+                /*行内元素不能修改宽高，宽高受内容影响*/
+                border: 1px solid green;
+                /*把行内元素改为块元素，改完宽高就可以更改了*/
+                display: block;
+                width: 100px;
+                height: 100px;
+            }
+            img{
+                /*图片属于行内块元素，即共占一行，又能修改宽高*/
+                width: 300px;
+                height: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>div1</div>
+        <div>div2</div>
+        <div>div3</div>
+        <span>span1</span>
+        <span>span2</span>
+        <span>span3</span>
+        <img src="../zm.jpg" alt="">
+        <img src="../zm.jpg" alt="">
+        <img src="../zm.jpg" alt="">
+    </body>
+</html>

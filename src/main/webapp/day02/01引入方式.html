@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--   内部样式，好处可以复用，弊端：只能在当前页面复用-->
+    <!--        标签选择器不能写在内部样式中-->
+    <link rel="stylesheet" href="my.css">
+<!--    样式冲突 内部样式和外部样式谁后执行的会生效-->
+    <style>
+        /* 标签选择器*/
+        h2{
+            color: orange;
+        }
+        h3{
+            color: pink;
+        }
+
+    </style>
+<!--   引入外部的css样式文件-->
+
+    </head>
+    <body>
+    <!--内联样式弊端：不能复用-->
+        <h1 style="color: #2f00ff">内联样式</h1>
+        <h1 style="color: #2f00ff">内联样式2</h1>
+        <h2>内部样式1</h2>
+        <h2>内部样式2</h2>
+        <h3 style="color: aquamarine">外部样式测试1</h3>
+        <h3>外部样式测试2</h3>
+</body>
+</html >
